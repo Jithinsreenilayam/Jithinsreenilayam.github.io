@@ -672,19 +672,21 @@ footer { border-top: 1px solid var(--rule); padding: 32px 0; }
   class="view-dash-btn" 
   onclick="event.stopPropagation(); openDash()"
   style="
-    padding:14px 28px;
-    font-size:16px;
+    padding:16px 40px;
+    font-size:17px;
     font-weight:600;
-    border-radius:12px;
-    background:#111827;
-    color:white;
     border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color:#1e293b;
     cursor:pointer;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    min-width:300px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
     transition:all 0.3s ease;
+    letter-spacing:0.3px;
   "
-  onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 6px 18px rgba(0,0,0,0.25)'"
-  onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+  onmouseover="this.style.transform='scale(1.04)';this.style.boxShadow='0 10px 24px rgba(0,0,0,0.18)'"
+  onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 6px 18px rgba(0,0,0,0.12)'"
 >
   📊 View Dashboard Visualisations
 </button>
