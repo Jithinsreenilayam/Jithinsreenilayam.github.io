@@ -668,9 +668,26 @@ footer { border-top: 1px solid var(--rule); padding: 32px 0; }
               <div class="proj-metric-label">Dashboard pages built</div>
             </div>
           </div>
-          <button class="view-dash-btn" onclick="event.stopPropagation(); openDash()">
-            &#x25A6; View Dashboard Visualisations
-          </button>
+        <button 
+  class="view-dash-btn" 
+  onclick="event.stopPropagation(); openDash()"
+  style="
+    padding:14px 28px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:12px;
+    background:#111827;
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:all 0.3s ease;
+  "
+  onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 6px 18px rgba(0,0,0,0.25)'"
+  onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+>
+  📊 View Dashboard Visualisations
+</button>
         </div>
     </div>
       
