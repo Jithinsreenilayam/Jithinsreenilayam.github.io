@@ -640,132 +640,37 @@ footer { border-top: 1px solid var(--rule); padding: 32px 0; }
     <div class="proj-grid fade-up" style="transition-delay:0.1s;">
 
       <!-- PROJECT 1 -->
-  <style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  .card{
-    background:var(--color-background-primary);
-    border:0.5px solid var(--color-border-tertiary);
-    border-radius:var(--border-radius-lg);
-    padding:32px 36px;
-    display:grid;
-    grid-template-columns:1fr auto;
-    gap:32px;
-    align-items:start;
-    transition:border-color 0.2s;
-    font-family:var(--font-sans);
-    max-width:860px;
-    margin:0 auto;
-  }
-  .card:hover{border-color:var(--color-border-primary);}
-  .left{display:flex;flex-direction:column;gap:0;}
-  .top-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-  .idx{font-family:var(--font-mono);font-size:11px;color:var(--color-text-tertiary);letter-spacing:1px;}
-  .badge{font-size:11px;padding:3px 9px;border-radius:20px;background:rgba(184,150,46,0.1);color:#8A6D2E;border:0.5px solid rgba(184,150,46,0.3);font-weight:500;}
-  h3{font-size:20px;font-weight:500;color:var(--color-text-primary);letter-spacing:-0.3px;margin-bottom:8px;line-height:1.25;}
-  .desc{font-size:13.5px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:18px;}
-  .tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:20px;}
-  .tag{font-size:11px;padding:3px 9px;border-radius:4px;background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-tertiary);}
-  .metrics{display:flex;gap:24px;padding-top:18px;border-top:0.5px solid var(--color-border-tertiary);}
-  .metric-val{font-size:20px;font-weight:500;color:var(--color-text-primary);line-height:1;margin-bottom:3px;}
-  .metric-lbl{font-size:11px;color:var(--color-text-tertiary);}
-
-  .right{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-    padding-top:4px;
-    flex-shrink:0;
-    min-width:130px;
-  }
-
-  .github-btn{
-    display:flex;align-items:center;justify-content:center;gap:6px;
-    width:130px;
-    padding:10px 0;
-    border:0.5px solid var(--color-border-secondary);
-    border-radius:var(--border-radius-md);
-    font-size:12px;font-weight:500;
-    color:var(--color-text-secondary);
-    background:var(--color-background-secondary);
-    cursor:pointer;transition:all 0.15s;
-    text-decoration:none;
-  }
-  .github-btn:hover{border-color:var(--color-border-primary);color:var(--color-text-primary);background:var(--color-background-primary);}
-
-  .dash-btn{
-    display:flex;align-items:center;justify-content:center;gap:6px;
-    width:130px;
-    padding:10px 0;
-    border:0.5px solid rgba(184,150,46,0.5);
-    border-radius:var(--border-radius-md);
-    font-size:12px;font-weight:500;
-    color:#8A6D2E;
-    background:rgba(184,150,46,0.07);
-    cursor:pointer;transition:all 0.15s;
-  }
-  .dash-btn:hover{background:rgba(184,150,46,0.15);border-color:rgba(184,150,46,0.7);}
-
-  .stack{display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:8px;border-top:0.5px solid var(--color-border-tertiary);width:100%;}
-  .stack-item{font-size:10px;color:var(--color-text-tertiary);letter-spacing:0.5px;text-transform:uppercase;font-family:var(--font-mono);}
-</style>
-
-<div style="padding:24px 0;">
-  <div class="card">
-    <div class="left">
-      <div class="top-row">
-        <span class="idx">01 — 2024</span>
-        <span class="badge">End-to-End Pipeline</span>
-      </div>
-
-      <h3>UAE Property Market Analysis</h3>
-
-      <p class="desc">Raw listing data ingested into MySQL, cleaned through 3 transformation stages, surfaced via 8 analytical views, and visualised in a 4-page Power BI dashboard. Covers RERA compliance, area intelligence, bedroom segmentation, and market trend forecasting across 5 UAE emirates.</p>
-
-      <div class="tags">
-        <span class="tag">MySQL 8.0</span>
-        <span class="tag">Power BI</span>
-        <span class="tag">DAX</span>
-        <span class="tag">Feature Engineering</span>
-        <span class="tag">Window Functions</span>
-        <span class="tag">RERA Analysis</span>
-        <span class="tag">Data Cleaning</span>
-      </div>
-
-      <div class="metrics">
-        <div>
-          <div class="metric-val">492</div>
-          <div class="metric-lbl">Listings · 5 emirates</div>
+ <div class="proj-card>
+        <div class="proj-body">
+          <div class="proj-index">01 — 2024</div>
+          <h3 class="proj-title">UAE Property Market Analysis</h3>
+          <p class="proj-desc">End-to-end analytics pipeline on the UAE residential property market. Raw listing data ingested into MySQL, transformed through 3 cleaning stages, surfaced via analytical views, and visualised in a 4-page Power BI dashboard. Covers RERA regulatory compliance, area-level price intelligence, bedroom segmentation, and market trend forecasting across 5 emirates.</p>
+          <div class="proj-tags">
+            <span class="tag">MySQL 8.0</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Window Functions</span>
+            <span class="tag">RERA Analysis</span>
+            <span class="tag">Data Cleaning</span>
+          </div>
+          <div class="proj-metrics">
+            <div>
+              <div class="proj-metric-val">492</div>
+              <div class="proj-metric-label">Listings · 5 emirates</div>
+            </div>
+            <div>
+              <div class="proj-metric-val">83%</div>
+              <div class="proj-metric-label">RERA price premium identified</div>
+            </div>
+            <div>
+              <div class="proj-metric-val">4</div>
+              <div class="proj-metric-label">Dashboard pages built</div>
+            </div>
+          </div>
+        <button class="view-dash-btn" onclick="event.stopPropagation(); openDash()"> &#x25A6; View Dashboard Visualisations </button>
         </div>
-        <div>
-          <div class="metric-val">83%</div>
-          <div class="metric-lbl">RERA price premium</div>
-        </div>
-        <div>
-          <div class="metric-val">4</div>
-          <div class="metric-lbl">Dashboard pages</div>
-        </div>
-      </div>
     </div>
-
-    <div class="right">
-      <a class="github-btn" href="https://github.com/Jithinsreenilayam/UAE-property-market--analysis" target="_blank">
-        <i class="ti ti-brand-github" aria-hidden="true" style="font-size:15px;"></i>
-        GitHub ↗
-      </a>
-      <button class="dash-btn" onclick="openDash()">
-        <i class="ti ti-layout-dashboard" aria-hidden="true" style="font-size:15px;"></i>
-        View Dashboards
-      </button>
-      <div class="stack">
-        <span class="stack-item">MySQL</span>
-        <span class="stack-item">Power BI</span>
-        <span class="stack-item">DAX</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 
       <!-- PROJECT 2 -->
      <a class="proj-card" href="https://github.com/Jithinsreenilayam/Project-Brexit" target="_blank">
@@ -797,14 +702,17 @@ footer { border-top: 1px solid var(--rule); padding: 32px 0; }
             </div>
           </div>
         </div>
-        <div class="proj-right">
-          <div class="proj-arrow">↗</div>
-          <div class="proj-stack">
-            <span class="proj-stack-item">Python</span>
-            <span class="proj-stack-item">Pandas</span>
-            <span class="proj-stack-item">Seaborn</span>
-          </div>
-        </div>
+        
+<div class="right">
+      <a class="github-btn" href="https://github.com/Jithinsreenilayam/UAE-property-market--analysis" target="_blank">
+        <i class="ti ti-brand-github" aria-hidden="true" style="font-size:15px;"></i>
+        GitHub ↗
+      </a>
+      <button class="dash-btn" onclick="openDash()">
+        <i class="ti ti-layout-dashboard" aria-hidden="true" style="font-size:15px;"></i>
+        View Dashboards
+      </button>
+    </div>
       </a>
 
     </div>
